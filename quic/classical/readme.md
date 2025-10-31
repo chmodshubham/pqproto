@@ -2,6 +2,15 @@
 
 A minimal complete QUIC echo server and client implementation using OpenSSL 3.5.2 with classical cryptography (RSA, X25519, ECDH).
 
+## Resources
+
+- QUIC Connection: https://docs.ngkore.org/security/quic/
+- OpenSSL QUIC introduction: https://docs.openssl.org/master/man7/ossl-guide-quic-introduction/#what-is-quic
+- OpenSSL QUIC source: https://github.com/openssl/openssl/tree/master/ssl/quic
+- Demo setups:
+  - HTTP/1-based QUIC client/server - https://github.com/openssl/openssl/tree/master/demos/quic
+  - HTTP/3 client/server - https://github.com/openssl/openssl/tree/master/demos/http3
+
 ## Certificate Generation
 
 Before running the programs, generate the required certificates in the `certs/` directory:

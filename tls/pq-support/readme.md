@@ -2,6 +2,12 @@
 
 A minimal but complete TLS 1.3 echo server and client implementation using **NIST-standardized post-quantum cryptographic algorithms** with OpenSSL 3.5.2.
 
+## Resources
+
+- TLS/SSL Connection: https://docs.ngkore.org/security/tls-ssl/
+- OpenSSL 3.5 TLS Guide: https://docs.openssl.org/3.5/man7/ossl-guide-tls-introduction/
+- Simple Echo Client/Server Demo: https://github.com/openssl/openssl/tree/master/demos/sslecho
+
 ## Post-Quantum Certificate Generation
 
 Before running the programs, generate post-quantum certificates in the `certs/` directory:
