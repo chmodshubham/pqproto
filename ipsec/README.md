@@ -4,6 +4,11 @@ This demonstration compares classical IPSec VPN against post-quantum cryptograph
 
 The system establishes IKEv2 VPN tunnels between client and server containers with configurable authentication methods (certificates or pre-shared keys). Classical mode uses traditional RSA-4096 certificates and ECC curves, while post-quantum mode integrates ML-KEM768/1024 key exchange with backwards compatibility fallback to classical algorithms.
 
+## Resources
+
+- IPSec Connection: https://docs.ngkore.org/security/ipsec/
+- StrongSwan v6.0.2 currently does not support post-quantum certificates such as ML-DSA. Development is in progress at https://github.com/strongswan/strongswan/tree/ml-dsa
+
 ## Prerequisites
 
 1. **Docker Installation**: Follow [install-docker.md](../../docs/install-docker.md)

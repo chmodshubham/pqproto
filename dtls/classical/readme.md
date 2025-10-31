@@ -1,6 +1,12 @@
 # DTLS 1.2 Client-Server Prototype
 
-A minimal but complete DTLS 1.2 echo server and client implementation using OpenSSL 3.5.2.
+This project provides a **minimal yet complete DTLS 1.2 echo client and server implementation** built using **OpenSSL 3.5.2**.
+
+> [!IMPORTANT]
+> Currently, **OpenSSL 3.5.3** does **not support DTLS 1.3** (still under development): https://github.com/openssl/openssl/tree/feature/dtls-1.3.
+> DTLS 1.3 can be tested experimentally with **post-quantum support** via `oqs-provider` and `liboqs`.
+
+This prototype focuses on **DTLS 1.2**, operating purely in **classical (non-PQ) mode**.
 
 ## Certificate Generation
 

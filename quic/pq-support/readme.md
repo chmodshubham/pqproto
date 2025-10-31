@@ -2,6 +2,15 @@
 
 A minimal but complete QUIC echo server and client implementation using OpenSSL 3.5.2 with post-quantum cryptography support (Kyber KEM algorithms and hybrid classical+PQ schemes).
 
+## Resources
+
+- QUIC Connection: https://docs.ngkore.org/security/quic/
+- OpenSSL QUIC introduction: https://docs.openssl.org/master/man7/ossl-guide-quic-introduction/#what-is-quic
+- OpenSSL QUIC source: https://github.com/openssl/openssl/tree/master/ssl/quic
+- Demo setups:
+  - HTTP/1-based QUIC client/server - https://github.com/openssl/openssl/tree/master/demos/quic
+  - HTTP/3 client/server - https://github.com/openssl/openssl/tree/master/demos/http3
+
 ## Certificate Generation
 
 Generate post-quantum certificates using Dilithium signature algorithms:

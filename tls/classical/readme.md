@@ -2,6 +2,12 @@
 
 A minimal but complete TLS 1.3 echo server and client implementation using OpenSSL 3.5.2.
 
+## Resources
+
+- TLS/SSL Connection: https://docs.ngkore.org/security/tls-ssl/
+- OpenSSL 3.5 TLS Guide: https://docs.openssl.org/3.5/man7/ossl-guide-tls-introduction/
+- Simple Echo Client/Server Demo: https://github.com/openssl/openssl/tree/master/demos/sslecho
+
 ## Certificate Generation
 
 Before running the programs, generate the required certificates in the `certs/` directory:
