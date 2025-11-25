@@ -26,18 +26,33 @@ tar xjf strongswan-6.0.2.tar.bz2
 cd strongswan-6.0.2
 
 # Configure build
-./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
-    --runstatedir=/var/run --with-systemdsystemunitdir=/lib/systemd/system \
-    --disable-defaults --enable-silent-rules --enable-charon \
-    --enable-systemd --enable-ikev2 --enable-vici --enable-swanctl \
-    --enable-nonce --enable-random --enable-drbg --enable-openssl \
-    --enable-curl --enable-pem --enable-x509 --enable-constraints \
-    --enable-revocation --enable-pki --enable-pubkey --enable-socket-default \
-    --enable-kernel-netlink --enable-resolve --enable-eap-identity \
-    --enable-eap-md5 --enable-eap-dynamic --enable-eap-tls --enable-updown \
-    --enable-sha2 --enable-pkcs11 --enable-hmac --enable-gcm --enable-mgf1 \
-    --enable-aes --enable-des --enable-sha1 --enable-md5 --enable-gmp \
-    --enable-stroke
+PKG_CONFIG_PATH="/usr/local/lib64/pkgconfig:/usr/local/lib/pkgconfig" \
+./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --with-systemdsystemunitdir=/lib/systemd/system \
+    --disable-defaults \
+    --enable-charon \
+    --enable-systemd \
+    --enable-vici \
+    --enable-swanctl \
+    --enable-ikev2 \
+    --enable-openssl \
+    --enable-ml \
+    --enable-nonce \
+    --enable-random \
+    --enable-pem \
+    --enable-x509 \
+    --enable-pkcs1 \
+    --enable-pkcs8 \
+    --enable-pki \
+    --enable-pubkey \
+    --enable-socket-default \
+    --enable-kernel-netlink \
+    --enable-updown \
+    --enable-resolve \
+    --enable-silent-rules
 
 # Compile and install
 make -j$(nproc)
